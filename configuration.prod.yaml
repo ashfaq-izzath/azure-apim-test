@@ -1,0 +1,10 @@
+apimServiceName: azure-apim-prod01
+namedValues:
+loggers:
+diagnostics:
+backends:
+subscriptions:
+products:
+apis:
+tags:
+policyFragments:

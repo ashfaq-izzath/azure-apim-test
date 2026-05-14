@@ -1,0 +1,24 @@
+apis:
+  - test-cicd
+backends:
+  - ignore
+gateways:
+ - ignore
+diagnostics:
+  - ignore
+groups:
+  - ignore
+loggers:
+  - ignore
+namedValues:
+  - ignore
+products:
+  - cicd-test
+subscriptions:
+  - cicd-subscription
+tags:
+  - ignore
+policyFragments:
+  - ignore
+  - versionSetName1
+

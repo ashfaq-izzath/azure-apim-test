@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "test-diagnose",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "isCurrent": true,
+    "displayName": "test-diagnose",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "http://httpbin.org",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}

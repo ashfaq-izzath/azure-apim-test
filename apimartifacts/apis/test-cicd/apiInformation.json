@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "api",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "isCurrent": true,
+    "displayName": "test-cicd",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://httpbin.org",
+    "subscriptionKeyParameterNames": {
+      "header": "api-key",
+      "query": "api-key"
+    },
+    "subscriptionRequired": true
+  }
+}

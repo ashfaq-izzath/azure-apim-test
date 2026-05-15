@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "trace-subdcription",
+    "scope": "/subscriptions/1a0c78bd-fada-40e0-9439-e897ae5c69f4/resourceGroups/azure-apim-unit-rg/providers/Microsoft.ApiManagement/service/azure-apim-unit/apis",
+    "allowTracing": false,
+    "state": "active"
+  }
+}

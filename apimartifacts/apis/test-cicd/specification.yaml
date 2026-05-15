@@ -9,6 +9,7 @@ paths:
   /get:
     get:
       summary: get
+      description: Returns the resource for testing CICD
       operationId: get
       responses:
         '200':

@@ -8,6 +8,5 @@ subscriptions:
 products:
   - cicd-test
 apis:
-  - test-cicd
 tags:
 policyFragments:

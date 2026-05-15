@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: test-diagnose
-  description: ''
+  description: Test diagnose api
   version: '1.0'
 servers:
   - url: https://azure-apim-unit.azure-api.net/test-diagnose

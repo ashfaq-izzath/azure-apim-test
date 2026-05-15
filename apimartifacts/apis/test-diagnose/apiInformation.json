@@ -3,7 +3,7 @@
     "path": "test-diagnose",
     "apiRevision": "1",
     "authenticationSettings": {},
-    "description": "",
+    "description": "Test diagnose api",
     "isCurrent": true,
     "displayName": "test-diagnose",
     "protocols": [

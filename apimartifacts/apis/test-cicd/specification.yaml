@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: test-cicd
-  description: ''
+  description: Product and subscription migration
   version: '1.0'
 servers:
   - url: https://azure-apim-unit.azure-api.net/api

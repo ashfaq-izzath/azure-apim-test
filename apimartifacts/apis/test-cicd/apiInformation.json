@@ -3,7 +3,7 @@
     "path": "api",
     "apiRevision": "1",
     "authenticationSettings": {},
-    "description": "",
+    "description": "Product and subscription migration",
     "isCurrent": true,
     "displayName": "test-cicd",
     "protocols": [

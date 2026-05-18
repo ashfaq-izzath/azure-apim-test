@@ -9,6 +9,7 @@ paths:
   /headers:
     get:
       summary: headers
+      description: headers
       operationId: headers
       responses:
         '200':

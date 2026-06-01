@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "soap-demo",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "isCurrent": true,
+    "displayName": "soapdemo",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso?WSDL",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}

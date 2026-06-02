@@ -1,0 +1,9 @@
+{
+  "properties": {
+    "displayName": "cicd-test",
+    "description": "Product created for testing GitHub CI/CD migration using APIM.",
+    "approvalRequired": false,
+    "state": "published",
+    "subscriptionRequired": true
+  }
+}

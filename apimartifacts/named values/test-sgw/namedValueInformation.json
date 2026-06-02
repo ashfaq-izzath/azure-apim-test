@@ -1,8 +1,0 @@
-{
-  "properties": {
-    "displayName": "test-sgw",
-    "secret": false,
-    "tags": [],
-    "value": "test123"
-  }
-}

@@ -1,0 +1,50 @@
+<!--
+    - Policies are applied in the order they appear.
+    - Position <base/> inside a section to inherit policies from the outer scope.
+    - Comments within policies are not preserved.
+-->
+<!-- Add policies as children to the <inbound>, <outbound>, <backend>, and <on-error> elements -->
+<policies>
+	<!-- Throttle, authorize, validate, cache, or transform the requests -->
+	<inbound>
+		<base />
+		<set-header name="Content-Type" exists-action="override">
+			<value>text/xml;charset=utf-8</value>
+		</set-header>
+		<set-header name="SOAPAction" exists-action="override">
+			<value>"NumberToWords"</value>
+		</set-header>
+		<set-variable name="requestBody" value="@(context.Request.Body.As<JObject>(preserveContent:true))" />
+		<set-body>@{
+          var body = (JObject)context.Variables["requestBody"];
+       
+          var number = body["number"].ToString();
+          return @"<?xml version=""1.0"" encoding=""utf-8""?>
+
+          <soap:Envelope 
+          xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""
+          xmlns:xsd=""http://www.w3.org/2001/XMLSchema""
+          xmlns:soap=""http://schemas.xmlsoap.org/soap/envelope/"">
+          
+          <soap:Body>
+          <NumberToWords xmlns=""http://www.dataaccess.com/webservicesserver/"">
+          <ubiNum>" + number + @"</ubiNum>
+          </NumberToWords>
+          </soap:Body>
+          </soap:Envelope>";
+          }</set-body>
+	</inbound>
+	<!-- Control if and how the requests are forwarded to services  -->
+	<backend>
+		<base />
+	</backend>
+	<!-- Customize the responses -->
+	<outbound>
+		<base />
+		<xml-to-json kind="direct" apply="always" />
+	</outbound>
+	<!-- Handle exceptions and customize error responses  -->
+	<on-error>
+		<base />
+	</on-error>
+</policies>

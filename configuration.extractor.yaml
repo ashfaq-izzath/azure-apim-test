@@ -1,5 +1,5 @@
 apis:
-  - test-cicd
+  - git-test
 backends:
   - ignore
 gateways:
@@ -13,9 +13,9 @@ loggers:
 namedValues:
   - ignore
 products:
-  - cicd-test
+  - ignore
 subscriptions:
-  - cicd-subscription
+  - ignore
 tags:
   - ignore
 policyFragments:

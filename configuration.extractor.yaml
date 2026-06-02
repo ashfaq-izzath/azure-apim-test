@@ -1,5 +1,5 @@
 apis:
-  - git-test
+  - test-cicd
 backends:
   - ignore
 gateways:
@@ -19,4 +19,6 @@ subscriptions:
 tags:
   - ignore
 policyFragments:
+  - ignore
+versionSets:
   - ignore

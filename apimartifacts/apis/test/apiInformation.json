@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "apim/soap",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "displayName": "test",
+    "isCurrent": true,
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}

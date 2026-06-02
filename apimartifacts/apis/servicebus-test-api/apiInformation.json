@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "servicebus",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "displayName": "servicebus-test-api",
+    "isCurrent": true,
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://azure-apim-unit.azure-api.net/servicebus",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

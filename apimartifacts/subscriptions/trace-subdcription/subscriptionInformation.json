@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "trace-subdcription",
+    "scope": "/apis",
+    "allowTracing": false,
+    "state": "active"
+  }
+}

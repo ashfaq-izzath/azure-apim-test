@@ -11,9 +11,9 @@ groups:
 loggers:
   - ignore
 namedValues:
-  - ignore
+  - test-sgw
 products:
-  - cicd-test
+  - ignore
 subscriptions:
   - ignore
 tags:

@@ -1,0 +1,29 @@
+openapi: 3.0.1
+info:
+  title: sgw-test-api
+  description: This API is used for testing the self-hosted gateway health.
+  version: '1.0'
+servers:
+  - url: https://azure-apim-unit.azure-api.net/sgw-test
+paths:
+  /health-api:
+    get:
+      summary: health-status-test-api
+      description: health-status-test-api
+      operationId: health-status-test-api
+      responses:
+        '200':
+          description: ''
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: subscription-key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

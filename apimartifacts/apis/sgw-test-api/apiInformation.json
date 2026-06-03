@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "sgw-test",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "This API is used for testing the self-hosted gateway health.",
+    "displayName": "sgw-test-api",
+    "isCurrent": true,
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://azure-apim-unit.azure-api.net/sgw-test",
+    "subscriptionKeyParameterNames": {
+      "header": "subscription-key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

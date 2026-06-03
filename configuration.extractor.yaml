@@ -1,5 +1,5 @@
 apis:
-  - test-cicd
+  - ignore
 backends:
   - ignore
 gateways:
@@ -11,7 +11,7 @@ groups:
 loggers:
   - ignore
 namedValues:
-  - ignore
+  - test-sgw
 products:
   - ignore
 subscriptions:

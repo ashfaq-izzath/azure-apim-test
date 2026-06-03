@@ -4,10 +4,7 @@ loggers:
 diagnostics:
 backends:
 subscriptions:
-  - cicd-subscription
 products:
-  - cicd-test
 apis:
-  - test-cicd
 tags:
 policyFragments:

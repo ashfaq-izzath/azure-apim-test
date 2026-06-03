@@ -1,5 +1,5 @@
 apis:
-  - sgw-test-api
+  - ignore
 backends:
   - ignore
 gateways:
@@ -13,7 +13,7 @@ loggers:
 namedValues:
   - ignore
 products:
-  - ignore
+  - cicd-test
 subscriptions:
   - ignore
 tags:

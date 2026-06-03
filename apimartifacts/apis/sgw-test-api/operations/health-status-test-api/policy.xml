@@ -1,0 +1,39 @@
+<!--
+    - Policies are applied in the order they appear.
+    - Position <base/> inside a section to inherit policies from the outer scope.
+    - Comments within policies are not preserved.
+-->
+<!-- Add policies as children to the <inbound>, <outbound>, <backend>, and <on-error> elements -->
+<policies>
+	<!-- Throttle, authorize, validate, cache, or transform the requests -->
+	<inbound>
+		<base />
+		<set-variable name="debug-token" value="@(context.Request.Headers.GetValueOrDefault("apim-debug-authorization", "default_value"))" />
+		<set-variable name="test" value="{{test-sgw}}" />
+		<return-response>
+			<set-status code="200" reason="ok" />
+			<set-header name="content-type" exists-action="override">
+				<value>application/json</value>
+			</set-header>
+			<set-header name="test" exists-action="override">
+				<value>{{test-sgw}}</value>
+			</set-header>
+			<set-body>hello from apim</set-body>
+		</return-response>
+	</inbound>
+	<!-- Control if and how the requests are forwarded to services  -->
+	<backend>
+		<base />
+	</backend>
+	<!-- Customize the responses -->
+	<outbound>
+		<base />
+		<set-header name="Apim-Trace-Id" exists-action="override">
+			<value>@(context.RequestId.ToString())</value>
+		</set-header>
+	</outbound>
+	<!-- Handle exceptions and customize error responses  -->
+	<on-error>
+		<base />
+	</on-error>
+</policies>
